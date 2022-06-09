@@ -48,3 +48,27 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  #BankCardNum, #BankCardTitulaire, #BankDate
+  {
+    color: white;
+  }
+
+  #BankCardNum, #BankCardTitulaire, #BankDate 
+  {
+    display: flex;
+    font-size: 1.2em;
+    position: relative;
+    top: -100px;
+    right: -20px;
+  }
+
+  #BankSecure
+  {
+    color: black;
+    display: flex;
+    font-size: 1.2em;
+    position: relative;
+    top: -200px;
+    right: -200px;
+  }

@@ -8,7 +8,7 @@
         </div>
         <div class="col-6">
             <h3 class="paiement">
-                Payer
+                Payer 35.49€
             </h3>
         </div>
     </div>

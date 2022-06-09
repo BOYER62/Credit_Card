@@ -5,8 +5,12 @@
 
 .paiement
 {
-    height: 100px;
-    background-color: orangered;
-    border-radius: 10%;
+    padding-top: 30px;
+    color: white;
+    height: 50px;
+    font-size: 2em;
     text-align: center;
+    background-color: orangered;
+    border-radius: 20%;
+    padding-bottom: 20%;
 }
