@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/Footer.css">
+
 <div class="container">
     <div class="row">
         <div class="col-6 securite">

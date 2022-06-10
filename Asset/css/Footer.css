@@ -5,12 +5,11 @@
 
 .paiement
 {
-    padding-top: 30px;
+    padding-top: 10px;
     color: white;
     height: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     background-color: orangered;
     border-radius: 20%;
-    padding-bottom: 20%;
 }

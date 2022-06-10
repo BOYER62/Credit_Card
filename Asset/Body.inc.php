@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/Body.css">
+
 <div class="container">
     <div class="row">
         <div class="col-6">
@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-6">
                         <label for="Number">Numéro de la carte</label>
-                        <input type="text" name="Number" id="Number"></textarea>
+                        <input type="text" name="Number" id="Number" maxlength="19">
                         <label for="Titulaire">Titulaire de la carte</label>
                         <input type="text" name="Titulaire" id="Titulaire">
                     </div>
@@ -31,11 +31,11 @@
                 <div class="row">
                     <div class="col-3">
                         <label for="Date">Date d'expiration</label>
-                        <input type="text" id="Date" value="" placeholder="MM/YY">
+                        <input type="text" id="Date" value="" placeholder="MM/YY" maxlength="5">
                     </div>
                     <div class="col-3">
                         <label for="Cryptogramme">Cryptogramme</label>
-                        <input type="text" id="Cryptogramme" value="" placeholder="XXX">
+                        <input type="text" id="Cryptogramme" value="" placeholder="XXX" maxlength="3">
                     </div>
                 </div>
             </form>

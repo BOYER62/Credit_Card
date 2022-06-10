@@ -6,31 +6,34 @@ const BankDate = document.getElementById('BankDate');
 const BankSecure = document.getElementById('BankSecure');
 const Date = document.getElementById('Date');
 const Cryptogramme = document.getElementById('Cryptogramme');
-const Flip = document.getElementsByClassName('flip-box')
+const FlipBox = document.createElement('FlipBox');
+FlipBox.className = 'flip-box-front';
+//const Flip = document.getElementsByClassName('flip-box-front');
+//const FlipBack = document.getElementsByClassName('flip-box-back');
 
-Num.addEventListener('keydown', function() {  
+Num.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
     Bank.innerHTML=Num.value;  
 });
 
-Titulaire.addEventListener('keydown', function() {  
+Titulaire.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
     BankTitulaire.innerHTML=Titulaire.value;  
 });
 
-Date.addEventListener('keydown', function() {  
+Date.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
     BankDate.innerHTML=Date.value;  
 });
 
-Cryptogramme.addEventListener('keydown', function() {  
+Cryptogramme.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
 
     BankSecure.innerHTML=Cryptogramme.value;  
 });
 
-$(document).ready(function(){
-    $('.flip-card').click(function(){
-    $(this).toggleClass('hover');
-  })
+Cryptogramme.addEventListener('click', function(){
+    FlipBox.classList.replace('flip-box-front','flip-box-back');
+    console.log(alert(`J'ai bien détecté le click`));
 });
+
