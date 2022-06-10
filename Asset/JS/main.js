@@ -6,8 +6,7 @@ const BankDate = document.getElementById('BankDate');
 const BankSecure = document.getElementById('BankSecure');
 const Date = document.getElementById('Date');
 const Cryptogramme = document.getElementById('Cryptogramme');
-const FlipBox = document.createElement('FlipBox');
-FlipBox.className = 'flip-box-front';
+const FlipFront = document.querySelector('.flip-box-inner');
 //const Flip = document.getElementsByClassName('flip-box-front');
 //const FlipBack = document.getElementsByClassName('flip-box-back');
 
@@ -33,7 +32,8 @@ Cryptogramme.addEventListener('keyup', function() {
 });
 
 Cryptogramme.addEventListener('click', function(){
-    FlipBox.classList.replace('flip-box-front','flip-box-back');
+    FlipFront.classList.toggle('flip-box-back');
+    FlipFront.classList.toggle('flip-vertical-right');
     console.log(alert(`J'ai bien détecté le click`));
 });
 

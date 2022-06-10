@@ -27,10 +27,7 @@
     transform: rotateY(180deg);
   }
 
-  .flip-box .hover .flip-box-inner {
-    transform: rotateY(180deg)!important;
-  }
-  
+ 
   /* Position the front and back side */
   .flip-box-front, .flip-box-back {
     position: absolute;

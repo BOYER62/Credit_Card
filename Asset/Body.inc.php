@@ -4,14 +4,14 @@
         <div class="col-6">
             <div class="flip-box">
                 <div class="flip-box-inner">
-                    <div class="flip-box-front">
+                    <div class="flip-box-front" id="flip-box-front">
                         <img class="flip-vertical-right" src="Asset/Images/carteRecto.jpg">
                         <div id="BankCardTitulaire"></div>
                         <div id="BankCardNum"></div>
                         <div id="BankDate"></div>
                         
                     </div>
-                    <div class="flip-box-back">
+                    <div class="flip-box-back" id="flip-box-back">
                         <img class="flip-vertical-right" src="Asset/Images/carteVerso.jpg">
                         <div id="BankSecure"></div>
                     </div>
