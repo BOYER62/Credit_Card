@@ -9,10 +9,17 @@ const Date = document.getElementById('Date');
 const Cryptogramme = document.getElementById('Cryptogramme');
 const FlipFront = document.querySelector('.flip-box-inner');
 
-Num.addEventListener('keyup', function() {
+var cleave = new Cleave('.ClassNumber', {
+    creditCard: true,
+    delimiters: [' ', ' ', ' '],
+    blocks: [4, 4, 4, 4],
+    uppercase: true
+});
 
+Num.addEventListener('keyup', function() {
+        
         Bank.innerHTML=Num.value;
-    
+        
 
 });
 
@@ -21,6 +28,11 @@ Titulaire.addEventListener('keyup', function() {
     BankTitulaire.innerHTML=Titulaire.value.toUpperCase();  
 });
 
+var cleave = new Cleave('.ClassDate', {
+    date: true,
+    delimiter: '/',
+    datePattern: ['m', 'Y']
+});
 
 Date.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
@@ -29,8 +41,9 @@ Date.addEventListener('keyup', function() {
 
 Cryptogramme.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
-
-    BankSecure.innerHTML=Cryptogramme.value;  
+    if(parseInt(Cryptogramme.value)){
+    BankSecure.innerHTML=Cryptogramme.value; 
+    }
 });
 
 Cryptogramme.addEventListener('click', function(){
