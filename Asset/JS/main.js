@@ -1,4 +1,5 @@
 const Num = document.getElementById('Number');
+const NumVerif = document.getElementById("Number").value;
 const Bank = document.getElementById('BankCardNum');
 const BankTitulaire = document.getElementById('BankCardTitulaire');
 const Titulaire = document.getElementById('Titulaire');
@@ -7,18 +8,19 @@ const BankSecure = document.getElementById('BankSecure');
 const Date = document.getElementById('Date');
 const Cryptogramme = document.getElementById('Cryptogramme');
 const FlipFront = document.querySelector('.flip-box-inner');
-//const Flip = document.getElementsByClassName('flip-box-front');
-//const FlipBack = document.getElementsByClassName('flip-box-back');
 
-Num.addEventListener('keyup', function() {  
-    // logMessage(`${e.key}`);
-    Bank.innerHTML=Num.value;  
+Num.addEventListener('keyup', function() {
+
+        Bank.innerHTML=Num.value;
+    
+
 });
 
 Titulaire.addEventListener('keyup', function() {  
-    // logMessage(`${e.key}`);
-    BankTitulaire.innerHTML=Titulaire.value;  
+    
+    BankTitulaire.innerHTML=Titulaire.value.toUpperCase();  
 });
+
 
 Date.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
@@ -34,6 +36,5 @@ Cryptogramme.addEventListener('keyup', function() {
 Cryptogramme.addEventListener('click', function(){
     FlipFront.classList.toggle('flip-box-back');
     FlipFront.classList.toggle('flip-vertical-right');
-    console.log(alert(`J'ai bien détecté le click`));
 });
 

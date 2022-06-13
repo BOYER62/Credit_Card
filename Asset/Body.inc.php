@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-6">
                         <label for="Number">Numéro de la carte</label>
-                        <input type="text" name="Number" id="Number" maxlength="19">
+                        <input type="text" name="Number" id="Number" maxlength="19" pattern="[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}[ ][0-9]{4}">
                         <label for="Titulaire">Titulaire de la carte</label>
                         <input type="text" name="Titulaire" id="Titulaire">
                     </div>
@@ -31,11 +31,11 @@
                 <div class="row">
                     <div class="col-3">
                         <label for="Date">Date d'expiration</label>
-                        <input type="text" id="Date" value="" placeholder="MM/YY" maxlength="5">
+                        <input type="text" id="Date" value="" placeholder="MM/YY" maxlength="5" pattern="[0-9]{2}[/][0-9]{2}">
                     </div>
                     <div class="col-3">
                         <label for="Cryptogramme">Cryptogramme</label>
-                        <input type="text" id="Cryptogramme" value="" placeholder="XXX" maxlength="3">
+                        <input type="text" id="Cryptogramme" value="" placeholder="XXX" maxlength="3" pattern="[0-9]{3}">
                     </div>
                 </div>
             </form>

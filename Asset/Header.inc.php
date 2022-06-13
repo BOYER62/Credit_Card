@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/header.css">
+
 <h1>
     Paiement par carte de crédit
 </h1>
