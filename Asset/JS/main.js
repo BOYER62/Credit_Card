@@ -46,6 +46,15 @@ Cryptogramme.addEventListener('keyup', function() {
     }
 });
 
+Cryptogramme.addEventListener("keyup", detectTabKey);
+
+function detectTabKey(e) {
+    if (e.keyCode == 9) {
+        FlipFront.classList.toggle('flip-box-back');
+        FlipFront.classList.toggle('flip-vertical-right');
+    }
+}
+
 Cryptogramme.addEventListener('click', function(){
     FlipFront.classList.toggle('flip-box-back');
     FlipFront.classList.toggle('flip-vertical-right');
