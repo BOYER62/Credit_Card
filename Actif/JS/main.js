@@ -39,6 +39,15 @@ Date.addEventListener('keyup', function() {
     BankDate.innerHTML=Date.value;  
 });
 
+Cryptogramme.addEventListener("keyup", detectTabKey);
+
+function detectTabKey(e) {
+    if (e.keyCode == 9) {
+        FlipFront.classList.toggle('flip-box-back');
+        FlipFront.classList.toggle('flip-vertical-right');
+    }
+}
+
 Cryptogramme.addEventListener('keyup', function() {  
     // logMessage(`${e.key}`);
     if(parseInt(Cryptogramme.value)){
